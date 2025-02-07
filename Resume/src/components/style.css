@@ -1,0 +1,6 @@
+/* Create a CSS file, e.g., styles.css, and import it in your component */
+.active {
+    color: red;
+    font-weight: bold;
+  }
+  

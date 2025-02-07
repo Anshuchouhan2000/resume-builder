@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.main2{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+
+}
+
+#container {
+  color:#ffffff;
+  text-transform: uppercase;
+  font-family:'Roboto';
+  font-size:40px;
+  font-weight:bold; 
+  text-align:center;
+  width:100%;
+  bottom:45%;
+ 
+
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:6px 22px 12px;
+  height:55px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+.head2 svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+  
+}
+.head2 svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 1;
+	stroke: #E59740;
+	font-size: 42px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(183,183,199,0); stroke: rgba(229,151,64,1);
+		stroke-dashoffset: 20%; stroke-dasharray: 0 40%; stroke-width: 2;
+	}
+	70%  {fill: rgba(183,183,199,0); stroke: rgba(229,151,64,1); }
+	80%  {fill: rgba(183,183,199,0); stroke: rgba(229,151,64,1); stroke-width: 3; }
+	100% {
+		fill: rgba(183,183,199,1); stroke: rgba(229,151,64,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+
+/* From Uiverse.io by SouravBandyopadhyay */ 
+.card-title {
+  color: #262626;
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.small-desc {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #452c2c;
+}
+
+.small-desc {
+  font-size: 1em;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, #6293c8, #384c6c);
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card {
+  display: block;
+  position: relative;
+  width: 20%;
+  height: 40vh;
+  background-color: #f2f8f9;
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, #364a60, #f59907);
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.card:hover:before {
+  transform: scale(28);
+}
+
+.card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover .card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+.item{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
